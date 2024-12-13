@@ -1,0 +1,25 @@
+type Query {
+    getBooks(title: String!): BookResponse
+}
+
+type BookResponse {
+    items: [Item]
+}
+
+type Item {
+    id: String
+    volumeInfo: VolumeInfo
+}
+
+type VolumeInfo {
+    title: String
+    authors: [String]
+    publisher: String
+    publishedDate: String
+    imageLinks: ImageLinks
+}
+
+type ImageLinks {
+    smallThumbnail: String
+    thumbnail: String
+}
