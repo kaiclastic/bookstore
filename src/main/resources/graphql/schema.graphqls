@@ -1,5 +1,7 @@
 type Query {
-    getBooks(title: String!): BookResponse
+    getBooksByTitle(title: String!): BookResponse
+    getBooksByAuthor(author: String!): BookResponse
+    getBookbyId(id: String!): Item
 }
 
 type BookResponse {

@@ -30,8 +30,14 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-logging'
 	implementation 'org.springframework.boot:spring-boot-starter-json'
 
+	implementation 'org.springframework.boot:spring-boot-starter-data-couchbase'
+
+	// https://mvnrepository.com/artifact/org.projectlombok/lombok
+	compileOnly 'org.projectlombok:lombok:1.18.36'
 
 }
+
+
 
 tasks.named('test') {
 	useJUnitPlatform()
